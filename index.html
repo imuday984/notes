@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <div class="maincard">
+        <div class="notecard card">
+            <h1 class="note">
+                learn javascript
+            </h1>
+            <button id="closebutton" onclick="removenote()">X</button>
+
+        </div>
+        </div>
+        <div class="addcard card">
+            <button id="addbutton" onclick="addnote()">
+                +
+            </button>
+        </div>
+        <div class="addcardform card hideelement">
+            <form onsubmit="submitnote(event)">
+                <textarea name="" id="noteText" rows="7">
+                    
+                </textarea>
+                <button class="submitbutton">submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
